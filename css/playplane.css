@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide .title-score,
+.hide .title,
+.hide #btn1,
+.hide #btn2 {
+  display: none;
+}
+
+/* 主样式 */
+.main {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: 100px auto 0;
+  background: url(../images/background_1.png);
+  /* 得分情况 */
+  /* 标题 */
+  /* 开始按钮 */
+}
+
+.main .title-score {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.main .title {
+  width: 300px;
+  margin: 150px auto 0;
+  font-size: 30px;
+  text-align: center;
+  animation: titlecolor 5s infinite;
+}
+
+@-webkit-keyframes titlecolor {
+  0% {
+    color: #63a35c;
+  }
+  20% {
+    color: #4f823c;
+  }
+  40% {
+    color: #ff0084;
+  }
+  60% {
+    color: #9c6215;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.main .btn {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main .btn div {
+  margin: 20px auto 10px;
+  height: 35px;
+  line-height: 35px;
+  width: 120px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.575);
+  cursor: pointer;
+}
